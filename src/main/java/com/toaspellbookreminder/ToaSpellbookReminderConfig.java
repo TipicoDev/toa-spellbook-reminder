@@ -7,7 +7,7 @@ import net.runelite.client.config.ConfigItem;
 
 import java.awt.*;
 
-@ConfigGroup("example")
+@ConfigGroup("toaspellbookreminder")
 public interface ToaSpellbookReminderConfig extends Config
 {
 	@ConfigItem(
