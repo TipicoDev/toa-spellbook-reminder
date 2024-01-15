@@ -18,8 +18,7 @@ public class ToaSpellbookReminderOverlay extends Overlay {
     private final ToaSpellbookReminderConfig config;
 
     @Inject
-    private ToaSpellbookReminderOverlay(ToaSpellbookReminderPlugin plugin, ToaSpellbookReminderConfig config)
-    {
+    private ToaSpellbookReminderOverlay(ToaSpellbookReminderPlugin plugin, ToaSpellbookReminderConfig config) {
         this.config = config;
         this.plugin = plugin;
 
@@ -33,8 +32,7 @@ public class ToaSpellbookReminderOverlay extends Overlay {
             String text = "Current Spellbook: " + plugin.getSpellbook().toUpperCase();
             Point textLocation = plugin.getToaDoor().getCanvasTextLocation(graphics2D, text, 200);
 
-            if (textLocation != null)
-            {
+            if (textLocation != null) {
                 if (Objects.equals(config.spellbook().toString(), plugin.getSpellbook())) {
                     renderTextLocation(graphics2D, new Point(textLocation.getX(), textLocation.getY()), text, config.correctSpellbook());
                 } else {
